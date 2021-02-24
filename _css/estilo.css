@@ -103,3 +103,23 @@ nav#menu a:hover{
     color:#ffffff;
     text-decoration: underline;
 }
+section#corpo {
+    display: block;
+    width: 510px;
+    float: left;
+    border-right: 1px #606060 solid;
+    padding-right: 15px;
+}
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    padding-right: 15px;
+    padding-left: 0px;
+}
+footer#rodape {
+    clear: both;
+}
+footer#rodape p{
+    text-align: center;
+}
