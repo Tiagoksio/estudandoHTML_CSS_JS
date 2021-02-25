@@ -1,12 +1,13 @@
 @charset "UTF-8";
 @font-face {
-    font-family:'FontLogo';
+    font-family:'FonteLogo';
     src: url('../_fonts/bubblegum-sans-regular.otf');
 }
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color:#dddddd;
     color: rgba(0, 0, 0, 1);
 }
@@ -23,7 +24,7 @@ header#cabecalho {
     background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 100px;
 }
 header#cabecalho h1{
-    font-family: 'FontLogo';
+    font-family: 'FonteLogo';
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
@@ -110,6 +111,41 @@ section#corpo {
     border-right: 1px #606060 solid;
     padding-right: 15px;
 }
+article#noticiaPrincipal h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 5px;
+    margin: 10px 0px 10px 0px;
+}
+article header#cabecalhoArtigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+article header#cabecalhoArtigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+article header#cabecalhoArtigo h3{
+    font-size: 8pt;
+    color: #888888;
+    text-align: right;
+}
+a{
+    color: #505050;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
 table#tabelaEspec {
     border: 1px #606060 solid;
     border-spacing: 0px;
@@ -126,7 +162,7 @@ table#tabelaEspec caption span {
     display: block;
     float: right;
     font-size: 8pt;
-    color: #000000;
+    color: #888888;
     margin-top: 10px;
 }
 table#tabelaEspec td {
@@ -151,6 +187,24 @@ aside#lateral {
     float: right;
     padding-right: 15px;
     padding-left: 0px;
+    margin-top: 10px;
+    background-color: #cecece;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+aside#lateral h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+aside#lateral h2 {
+    color: #ffffff;
+    font-size: 13pt;
+    font-weight: bolder;
+    background-color: #606060;
+    padding: 10px;
+    margin-left: 10px;
 }
 footer#rodape {
     clear: both;
