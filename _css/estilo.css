@@ -67,7 +67,7 @@ figure.foto-legenda figcaption {
     height: 100%;
     padding: 10px;
     box-sizing: border-box;
-    transition: opacity 1s;
+    transition: opacity .5s;
 }
 figure.foto-legenda:hover figcaption {
     opacity: 1;
@@ -207,6 +207,7 @@ aside#lateral h2 {
     margin-left: 10px;
 }
 footer#rodape {
+    border-top: 1px #606060 solid;
     clear: both;
 }
 footer#rodape p{
