@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre Google Glass</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/form.css">
 </head>
 <body>
 <div id="interface">    
@@ -37,7 +38,7 @@
         </article>
         <form method="POST" id="fContato" action="mailto:contato@cursoemvideo.com" oninput="calc_total();">
             <fieldset id="usuario"><legend>Identificação do Usuário</legend>
-                <p><label for="iNome">Nome:</label> <input type="text" name="nNome" id="iNome" size="40" maxlength="45" placeholder="Nome Completo"></p>
+                <p><label for="iNome">Nome:</label> <input type="text" name="nNome" id="iNome" size="20" maxlength="45" placeholder="Nome Completo"></p>
                 <p><label for="iSenha">Senha:</label><input type="password" name="nSenha" id="iSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
                 <p><label for="iEmail">E-mail:</label><input type="email" name="nEmail" id="iEmail" size="20" maxlength="30" placeholder="usuário@Email.com"></p>
                 <fieldset id="sexo"><legend>Sexo</legend>
@@ -72,10 +73,10 @@
                 </datalist>
             </fieldset>
             <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
-                <p><label for="iUrg">Grau de Urgência:</label>
-                Mín<input type="range" name="nUrg" id="iUrg" step="2" min="0" max="10">Máx</p> 
+                <p><label for="iUrg">Grau de Urgência</label>
+                -<input type="range" name="nUrg" id="iUrg" step="2" min="0" max="10">+</p> 
                 <p><label for="iMsg">Mensagem:</label>
-                <textarea name="nMsg" id="iMsg" cols="45" rows="5" placeholder="Escreva sua mensagem"></textarea></p>
+                <textarea name="nMsg" id="iMsg" cols="35" rows="5" placeholder="Escreva sua mensagem"></textarea></p>
             </fieldset>
             <fieldset id="pedido"><legend>Queo um Google Glass</legend>
                 <p><input type="checkbox" name="nPed" id="iPed" checked>
