@@ -13,10 +13,15 @@ audio#musica {
     top: 500px;
     width: 300px;
 }
-video#filme {
+video#filme-03 {
     display: block;
     position: relative;
     left: 90px;
     top: 85px;
     width: 440px;
+}
+video#filme-02{
+    display: block;
+    position: relative;
+    margin-right: 10px;
 }

@@ -12,7 +12,7 @@ body {
     color: rgba(0, 0, 0, 1);
 }
 div#interface {
-    width: 900px;
+    width: 950px;
     background-color: #ffffff;
     margin: -10px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
@@ -183,7 +183,7 @@ table#tabelaEspec td.cd {
 }
 aside#lateral {
     display: block;
-    width: 350px;
+    width: 400px;
     float: right;
     padding-right: 15px;
     padding-left: 0px;
@@ -204,6 +204,15 @@ aside#lateral h2 {
     font-weight: bolder;
     background-color: #606060;
     padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-right: -4px;
+}
+aside#lateral p{
+    margin-left: 10px;
+}
+aside#lateral video#filme-02 {
+    display: block;
     margin-left: 10px;
 }
 footer#rodape {
