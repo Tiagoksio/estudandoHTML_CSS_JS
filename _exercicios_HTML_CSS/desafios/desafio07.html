@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F913</p>
+    <picture>
+        <!--Enquanto a largura for >= min-midth, set a imagem do src-->
+        <source media="(min-width: 1210px)" srcset="../midia/imagens/paisagem/paisagem-g.png" type="image/png">
+        <!--Enquanto a largura for >= min-width, set a imagem do src-->
+        <source media="(min-width: 760px)" srcset="../midia/imagens/paisagem/paisagem-m.png" type="image/png">
+        <!--Imagem padrão-->
+        <img src="../midia/imagens/paisagem/paisagem-p.png" alt="Paisagem pequena">
+        <!--Se a imagem padrão for a maior, usa-se o menor primeiro-->
+    </picture>
+    
+</body>
+</html>
