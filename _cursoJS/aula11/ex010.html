@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Open Sans', sans-serif;
+        }
+        div#res {
+            display: flex;
+            padding: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+        div p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        header {
+            width: 100%;
+            background-color: rgb(64, 121, 188);
+            text-align: center;
+            color: floralwhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Velocidade da Via</h1>
+    </header>
+    <form action="">
+        <fieldset>
+            <p><label for="iTxtVel">Informe a velocidade do veículo</label>
+            <input type="number" name="nTxtVel" id="iTxtVel" maxlength="10" size="10" placeholder="80, 60, 120..."></p>
+        </fieldset>
+        <fieldset><legend>Selecione o tipo de via</legend>
+            <input type="radio" name="nVia" id="iEstrada" value="estrada"><label for="iEstrada">Estrada</label><br>
+            <input type="radio" name="nVia" id="iRodSimp" value="rodsimp"><label for="iRodSimp">Rodovia Simples</label><br>
+            <input type="radio" name="nVia" id="iRodDup" value="roddup"><label for="iRodDup">Rodovia Dupla</label><br>
+            <input type="radio" name="nVia" id="iTranRap" value="tranrap"><label for="iTranRap">Transito Rápido</label><br>
+            <input type="radio" name="nVia" id="iArt" value="art"><label for="iArt">Arterial</label><br>
+            <input type="radio" name="nVia" id="iColet" value="colet"><label for="iColet">Coletora</label><br>
+            <input type="radio" name="nVia" id="iLoc" value="loc"><label for="iLoc">Local</label>
+        </fieldset>
+        <div id="res">
+        </div>
+    </form>
+    <div id="butoes">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <input type="reset" value="Limpar" onclick="limpar()">
+    </div>
+    <script src="exe010.js"></script>
+</body>
+</html>
