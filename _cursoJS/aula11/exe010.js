@@ -1,8 +1,8 @@
 function verificar() {
     var txtVel = document.querySelector('input#iTxtVel')
-    var resposta = window.document.querySelector('div#res')
+    var res = window.document.querySelector('div#res')
     var vel = Number(txtVel.value)
-    res.innerHTML = `<p>Sua velocidade atual é de ${vel}km/h</p>`
+    res.innerHTML = `<p><strong>Use o sinto de segurança e obedeça às leis de trânsito</strong></p>`
     var via = document.querySelector('input[name="nVia"]:checked').value
     if (via == 'estrada' && (vel > 60 || vel < 30)) {
         res.innerHTML += '<p>Você está fora dos limites de velocidade da Estrada: min 30km/h e max 60km/h</p>'
