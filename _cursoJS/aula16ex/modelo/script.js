@@ -51,7 +51,7 @@ function finalizar() {
         valores.sort();
         let tot = valores.length;
         let maior;
-        if (valores.indexOf(100) != -1) { //gabiarra porque o 100 não sai no sort().
+        if (valores.indexOf(100) != -1) { //gambiarra porque o 100 não sai no sort().
             maior = 100;
         } else {
             maior = valores[valores.length - 1];
