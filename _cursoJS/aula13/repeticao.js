@@ -28,3 +28,8 @@
 // for (let valor of vetor) {
 //     console.log(valor);    
 // }
+
+// let vet = [1, 2, 3, 4, 5] // Para cada iteração com o array, o iterator recebe o valor do elemento.
+// for (let iterator of vet) { 
+//     console.log(iterator);    
+// }
