@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarquia com jquery</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(()=>{
+           $('h2').css('margin', '0');
+           $('p').css({margin:'0', color:'blue'});
+           $('.div1').css({'margin-bottom':'20px', 'background-color':'#ccc'});
+
+           // Filhas
+           $('.div1 span').hide().delay('1000').fadeIn('1000').css({color:"green", 'font-size': '15px'});
+           $('.div1 h2').hide().delay('500').fadeIn('500').css({color:"red", 'font-size': '50px'});
+           // Filhas diretas do elemento
+           $('.div1 > span').hide().delay('1000').fadeIn('1000').css({color:"red", 'font-size': '15px'});
+           //Primeiro elemento após o selecionado
+           $('.p1 + p').css({color:"orange", 'font-size': '25px'});
+           //Todos os elementos após o selecionado
+           $('.p1 ~ p').css({color:"black"});
+        })
+    </script>
+</head>
+<body>
+    <div class="div1">
+        <h2>H2 filho de DIV1</h2>
+        <p>P filho de DIV1 <span>SPAN filho de P</span></p>
+        <span>Span filho de DIV1</span>
+    </div>
+    <h2>H2 fora de div1</h2>
+    <p class="p1">P1 fora de div1</p>
+    <p>P2 fora de div1</p>
+    <p>P3 fora de div1</p>
+</body>
+</html>

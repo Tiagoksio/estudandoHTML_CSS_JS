@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $('img')
+                .hide()
+                .delay(100)
+                .fadeIn('slow');
+            $('h1').css('font-family', 'Helvetica')
+        })
+    </script>
+</head>
+<body>
+    <h1>Jquery</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eos. Quod distinctio laboriosam nulla doloremque corrupti. Omnis cum quas beatae iusto in molestias eos tempora eligendi nisi, ratione nemo reiciendis!</p>
+    <button id="btn_rm_img">Remover Imagem</button>
+    <button id="btn_sw_img">Mostrar imagem</button>
+    <img src="https://cdn2.unrealengine.com/Diesel%2Fblog%2Faccount-security-at-epic-games%2FEGS_Social_Update_News-2560x1440-128a69890d92407b815582c1deba54450e5645f9.jpg" alt="" style="height: 500px; width: 500px;">
+    <script>
+        $("#btn_rm_img")
+            .on('click', () => 
+                $('img')
+                    .delay(100)
+                    .fadeOut('slow'));
+
+        $("#btn_sw_img")
+            .on('click', () => 
+                $('img')
+                    .delay(100)
+                    .fadeIn('slow'));
+    </script>
+</body>
+</html>
