@@ -7,6 +7,7 @@ $(function(){
     const ev6 = $('.ev6');
     const ev7 = $('.ev7');
     const dv = $('.ex1');
+    const inpt = $('#inpt');
     var acc = 0;
 
     ev1.click(function() {
@@ -50,4 +51,10 @@ $(function(){
         let localy = move.pageY;
         dv.text(`Movimento X: ${localx}\nMovimento Y: ${localy}`)
     })
+    //Evento keypress conforme ASCII
+    //preventDefault modifica o comportamento padrão de certo evento.
+    inpt.keypress((event) => {
+        event.preventDefault();
+        dv.text(`A tecla precionada foi: ${event.which}`);
+    });
 });
